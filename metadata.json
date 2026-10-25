@@ -1,0 +1,7 @@
+{
+  "name": "Vyapar Khata - Hisab Kitab",
+  "description": "Smart ledger and bookkeeping app for small businesses with buyer/seller accounts, offline entries, and Google Drive sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

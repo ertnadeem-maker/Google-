@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Ledger Book Illustration in Safe Zone -->
+  <g filter="url(#shadow)" transform="translate(106, 96)">
+    <!-- Book Base -->
+    <rect x="0" y="0" width="300" height="320" rx="24" fill="url(#bookGrad)"/>
+    <!-- Book Spine Accent -->
+    <rect x="0" y="0" width="48" height="320" rx="24" fill="#047857"/>
+    <rect x="24" y="0" width="24" height="320" fill="#047857"/>
+    
+    <!-- Ledger Spine Rings -->
+    <circle cx="24" cy="80" r="8" fill="#ffffff" opacity="0.8"/>
+    <circle cx="24" cy="160" r="8" fill="#ffffff" opacity="0.8"/>
+    <circle cx="24" cy="240" r="8" fill="#ffffff" opacity="0.8"/>
+
+    <!-- Rupee Symbol & Ledger lines -->
+    <!-- Large Stylized Indian Rupee ₹ -->
+    <g transform="translate(105, 75)" fill="#059669">
+      <path d="M 0 0 L 80 0 L 80 14 L 0 14 Z"/>
+      <path d="M 0 26 L 80 26 L 80 40 L 0 40 Z"/>
+      <path d="M 0 0 L 22 0 C 45 0 65 14 65 42 C 65 68 45 82 22 82 L 0 82 Z" fill-opacity="0.15"/>
+      <path d="M 16 0 L 16 140 L 32 140 L 32 84 C 55 82 72 66 76 42 L 80 42 L 80 26 L 73 26 C 70 12 58 0 42 0 Z"/>
+      <path d="M 28 78 L 78 140 L 98 140 L 45 74 Z"/>
+    </g>
+
+    <!-- Ledger Entry Lines -->
+    <rect x="80" y="235" width="180" height="8" rx="4" fill="#cbd5e1"/>
+    <rect x="80" y="255" width="120" height="8" rx="4" fill="#94a3b8"/>
+  </g>
+</svg>
